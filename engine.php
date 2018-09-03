@@ -1,4 +1,3 @@
-<pre>
 <?php
 
 require_once 'cooler.php';
@@ -19,19 +18,19 @@ class Engine
     public function on()
     {
         echo PHP_EOL;
-        echo "<b>Двигатель включен</b>" . PHP_EOL;
+        echo "<b>Двигатель включен</b>" . '<br>';
     }
 
     public function off()
     {
         echo PHP_EOL;
-        echo "<b>Двигатель выключен</b>" . PHP_EOL;
+        echo "<b>Двигатель выключен</b>" . '<br>';
     }
 
     public function heat($increase)
     {
         $this->temperature += $increase;
-        echo "Температура двигателя = $this->temperature <per>&deg" . PHP_EOL;
+        echo "Температура двигателя = $this->temperature <per>&deg" . '<br>';
 
         if ($this->temperature >= 90) {
             $this->cool();

@@ -1,4 +1,3 @@
-<pre>
 <?php
 
 require_once 'car.php';

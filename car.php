@@ -1,9 +1,7 @@
-<pre>
 <?php
 
 require_once 'engine.php';
-require_once 'transmission.php';
-
+require_once 'TransmissionMechanic.php';
 
 interface Movable
 {
@@ -87,8 +85,8 @@ class Car extends A_Car
             $this->distanseFromStart += $this->dist;
         }
 
-        echo "Находимся на расстоянии $this->distanseFromStart метров от начальной точки" . PHP_EOL;
-        echo "Общий пробег = $this->totalCoveredDistanse метров ". PHP_EOL;
+        echo "Находимся на расстоянии $this->distanseFromStart метров от начальной точки" . '<br>';
+        echo "Общий пробег = $this->totalCoveredDistanse метров " . '<br>' . '<br>';
         flush();
     }
 }

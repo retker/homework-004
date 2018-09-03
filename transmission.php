@@ -1,4 +1,3 @@
-<pre>
 <?php
 
 trait TransmissionMode
@@ -14,32 +13,9 @@ trait TransmissionMode
     {
         $this->mode = $mode;
         if ($mode == 'forward') {
-            echo 'Едем вперед' . PHP_EOL;
+            echo 'Едем вперед' . '<br>';
         } else {
-            echo 'Едем назад' . PHP_EOL;
+            echo 'Едем назад' . '<br>';
         }
-    }
-}
-
-class TransmissionAuto
-{
-    use TransmissionMode;
-}
-
-class TransmissionMechanic
-{
-    use TransmissionMode;
-
-    protected $gear;
-
-    public function getGear()
-    {
-        return $this->gear;
-    }
-
-    public function setGear($gear)
-    {
-        $this->gear = $gear;
-        echo "Включена <b>$gear</b> передача" . PHP_EOL;
     }
 }
